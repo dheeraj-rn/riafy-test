@@ -10,12 +10,6 @@
   <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <style>
-    .a1 {
-      margin-top: 100px;
-      margin-left: 250px;
-    }
-  </style>
 </head>
 
 <body">
@@ -40,23 +34,19 @@
                     </div>
                     <div class="left-align col s12">
                       <span class="black-text">
-                        <b><%= instaData[i]['id'] %></b>
+                        <b>varun.aditya</b>
                       </span>
                     </div>
                     <div class="right-align col s12">
                       <i class="material-icons">more_vert</i>
                     </div>
                   </div>
-                  <div class="grey lighten-5 z-depth-1">
-                    <% if(device === 'DESKTOP' ){ %>
-                    <img class="materialboxed" width="650" src="<%= instaData[i]['high thumbnail'] %>">
-                    <% } else{ %>
-                    <img class="materialboxed" width="650" src="<%= instaData[i]['medium thumbnail'] %>">
-                    <% } %>
+                  <div class="center-align">
+                    <img class="responsive-img" width="auto" src="<%= instaData[i]['high thumbnail'] %>">
                   </div>
                   <div class="left-align col s12">
                     <span class="black-text">
-                      <b><%= instaData[i]['id'] %></b>
+                      <b>varun.aditya</b>
                     </span>
                     <span class="black-text">
                       <%= instaData[i]['title'] %>
