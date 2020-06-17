@@ -31,33 +31,34 @@
             <div class="row">
               <% if(typeof instaData !='undefined' ){ %>
               <%  for(let i=0; i<instaData.length; ++i){ %>
-              <!-- <div class="col s12 m8 offset-m2 l6 offset-l3"> -->
-              <div class="card-panel grey lighten-5 z-depth-1">
-                <div class="row valign-wrapper">
-                  <div class="col s5">
-                    <img src="<%= instaData[i]['low thumbnail'] %>" alt="" class="circle responsive-img">
-                    <!-- notice the "circle" class -->
+              <div class="col s12">
+                <div class="card-panel grey lighten-5 z-depth-1">
+                  <div class="row valign-wrapper">
+                    <div class="col s5">
+                      <img src="<%= instaData[i]['low thumbnail'] %>" alt="" class="circle responsive-img">
+                      <!-- notice the "circle" class -->
+                    </div>
+                    <div class="left-align col s12">
+                      <span class="black-text">
+                        varun.aditya
+                      </span>
+                    </div>
+                    <div class="right-align col s12">
+                      <i class="material-icons">more_vert</i>
+                    </div>
+                  </div>
+                  <div class="grey lighten-5 z-depth-1">
+                    <img class="materialboxed" width="650" src="<%= instaData[i]['high thumbnail'] %>">
+
                   </div>
                   <div class="left-align col s12">
                     <span class="black-text">
-                      varun.aditya
+                      <b>varun.aditya</b>
+                    </span>
+                    <span class="black-text">
+                      <%= instaData[i]['title'] %>
                     </span>
                   </div>
-                  <div class="right-align col s12">
-                    <i class="material-icons">more_vert</i>
-                  </div>
-                </div>
-                <div class="grey lighten-5 z-depth-1">
-                  <img class="materialboxed" width="650" src="<%= instaData[i]['high thumbnail'] %>">
-
-                </div>
-                <div class="left-align col s12">
-                  <span class="black-text">
-                    <b>varun.aditya</b>
-                  </span>
-                  <span class="black-text">
-                    <%= instaData[i]['title'] %>
-                  </span>
                 </div>
 
               </div>
