@@ -9,9 +9,8 @@ app.set("view engine", "ejs");
 
 app.get("/", async (req, res) => {
     let instaData = await axios.get('https://hiit.ria.rocks/videos_api/cdn/com.rstream.crafts?versionCode=40&lurl=Canvas%20painting%20ideas');
-
     res.render("index", {
-        instaData: instaData
+        instaData: instaData.data
     });
 });
 
