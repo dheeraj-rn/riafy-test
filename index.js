@@ -12,9 +12,11 @@ app.use(device.capture());
 
 app.get("/", async (req, res) => {
     let instaData = await axios.get('https://hiit.ria.rocks/videos_api/cdn/com.rstream.crafts?versionCode=40&lurl=Canvas%20painting%20ideas');
+    let comments = await axios.get('http://cookbookrecipes.in/test.php');
     res.render("index", {
         instaData: instaData.data,
-        device: req.device.type.toUpperCase()
+        device: req.device.type.toUpperCase(),
+        comments: comments.data
     });
 });
 

@@ -63,7 +63,18 @@
                     </span>
                   </div>
                 </div>
-
+                <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header">View all <%= comments.length %> commnets</div>
+                    <div class="collapsible-body">
+                      <%  comments.forEach((commnet)=>{ %>
+                      <div class="collection left-align">
+                        <p><b><%= commnet.username %></b> <%= commnet.comments %></p>
+                      </div>
+                      <% }) %>
+                    </div>
+                  </li>
+                </ul>
               </div>
               <% } %>
               <% } %>
@@ -76,6 +87,11 @@
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.collapsible').collapsible();
+      });
+    </script>
     </body>
 
 </html>
