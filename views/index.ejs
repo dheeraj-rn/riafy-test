@@ -48,8 +48,11 @@
                     </div>
                   </div>
                   <div class="grey lighten-5 z-depth-1">
+                    <% if(device === 'DESKTOP' ){ %>
                     <img class="materialboxed" width="650" src="<%= instaData[i]['high thumbnail'] %>">
-
+                    <% } else{ %>
+                    <img class="materialboxed" width="650" src="<%= instaData[i]['medium thumbnail'] %>">
+                    <% } %>
                   </div>
                   <div class="left-align col s12">
                     <span class="black-text">
